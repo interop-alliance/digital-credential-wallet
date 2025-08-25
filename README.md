@@ -5,14 +5,11 @@
 T3 Digital Credential Wallet is a cross-platform iOS and Android mobile application 
 for storing and sharing digital learner credentials.
 
-Install [T3 Digital Credential Wallet](https://lcw.app/) for your mobile!
+Install [T3 Digital Credential Wallet]() for your mobile!
 
-The wallet is based on the [T3 Digital Credential Wallet specification](https://digitalcredentials.mit.edu/docs/Learner-Credential-Wallet-Specification-May-2021.pdf) developed by the [Digital Credentials Consortium](https://digitalcredentials.mit.edu/). The T3 Digital Credential Wallet specification is based on the draft [W3C Universal Wallet interoperability specification](https://w3c-ccg.github.io/universal-wallet-interop-spec/) and the draft [W3C Verifiable Credentials data model](https://w3c.github.io/vc-data-model/).
+The wallet is based on the [LCW Digital Credential Wallet specification](https://digitalcredentials.mit.edu/docs/Learner-Credential-Wallet-Specification-May-2021.pdf) developed by the [Digital Credentials Consortium](https://digitalcredentials.mit.edu/). The LCW Digital Credential Wallet specification is based on the draft [W3C Universal Wallet interoperability specification](https://w3c-ccg.github.io/universal-wallet-interop-spec/) and the draft [W3C Verifiable Credentials data model](https://w3c.github.io/vc-data-model/).
 
 The app has been compiled for iOS and Android and allows users to add and share credentials, as well as manage the wallet.
-
-<img src="https://user-images.githubusercontent.com/20584379/234087398-2a8c2b54-66a3-4a56-8332-0e4bfc089a3b.png" alt="The T3 Digital Credential Wallet startup screen, displaying the choice between quick and custom setup." width="24%" /> <img src="https://user-images.githubusercontent.com/20584379/234087758-f718942b-d9b7-47a6-846a-4ba5f9aea83a.png" alt="The “credential preview” screen, displaying information about an issued credential, including credential name, issuer, issuer date, credential description, criteria, and verification status." width="24%" /> <img src="https://user-images.githubusercontent.com/20584379/234087893-81573b7e-db33-48f5-8d51-23f845fb75a4.png" alt="The “share credential” screen, which allows the user to share their credentials with others through a public link or QR code, and includes the additional options to send the credential link or directly add it to LinkedIn through the app." width="24%" /> <img src="https://user-images.githubusercontent.com/20584379/234087959-4150b63a-c980-472a-bc54-7f8b0a9bbc5f.png" alt="The “verification status” screen, which shows whether the credential has been verified, and includes an additional breakdown of information including the last date verification status was checked, the validity of the credentials digital signature, expiration, and revocation status." width="24%" />
-
 
 ## Goals
 This T3 Digital Credential Wallet includes the features and technical requirements 
@@ -25,11 +22,6 @@ or to apply for jobs with employers—in an interoperable manner.
 * Keep credential access safe with strong encryption best practices
 * Create and share a presentation that collates any number of credentials in their wallet
 * Backup and restore their wallet
-
-## Pilot
-The Digital Credentials Consortium is working with a number of colleges and 
-universities to [pilot test](https://lcw.app/pilot.html) the wallet.
-
 
 ## Development Setup
 
@@ -59,7 +51,7 @@ See [Installing on Linux](install-linux.md) on setting up the project on Linux.
   * If you need to install anything, run `asdf plugin add [plugin-name]` to add it to your local machine
   * Here is a link if you need it to the [asdf installation documentation](https://asdf-vm.com/guide/getting-started.html#getting-started) _(homebrew is the easiest)_
 
-### Running the LCW App
+### Running the App
 1) Run `yarn start` in one terminal
 2) In another terminal run `yarn android`
   * When running on android, open Android Studio and make sure the device you want to run on is selected (whether that is an emulator or a real device). 
@@ -147,7 +139,7 @@ project at MIT. We can be contacted at lcw-support@mit.edu.
 
 ## Terms and Conditions of Use
 
-[T3 Digital Credential Wallet Terms and Conditions of Use](https://lcw.app/terms.html)
+[T3 Digital Credential Wallet Terms and Conditions of Use]()
 
 ## Acknowledgements
 Initial development was supported by the U.S. Department of Education (Contract 
