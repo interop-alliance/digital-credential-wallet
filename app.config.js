@@ -4,8 +4,8 @@
  */
 const env = process.env;
 
-const BUILD_NUMBER = parseInt(env.APP_BUILD_NUMBER) || 94;
-const VERSION_NUMBER = env.APP_VERSION_NUMBER || '2.2.4';
+const BUILD_NUMBER = parseInt(env.APP_BUILD_NUMBER) || 1;
+const VERSION_NUMBER = env.APP_VERSION_NUMBER || '1.0.0';
 
 // Used by the 'Create Public Link' functionality
 export const VERIFIER_PLUS_URL = env['VERIFIER_PLUS_URL'] || 'https://feditest.ngrok.dev';
@@ -31,7 +31,7 @@ export const DATE_FORMAT = 'MMM D, YYYY';
 // Deep Link / Universal App Link configuration
 export const LinkConfig = {
   schemes: {
-    customProtocol: ['dccrequest://', 'org.dcconsortium://', 'https://lcw.app/request'],
+    customProtocol: ['dccrequest://', 'https://lcw.app/request'],
     universalAppLink: 'https://lcw.app/mobile'
   },
   registerWalletUrl: 'https://lcw.app/register-wallet.html',
@@ -71,14 +71,14 @@ export default {
     ios: {
       buildNumber: `${BUILD_NUMBER}`,
       supportsTablet: true,
-      bundleIdentifier: 'edu.mit.eduwallet',
+      // bundleIdentifier: 'org.t3.dcw',
       deploymentTarget: '13.0',
       entitlements: {
         'com.apple.security.application-groups': [
-          'group.edu.mit.eduwallet'
+          // 'group.edu.mit.eduwallet'
         ]
       },
-      associatedDomains: ['applinks:lcw.app/mobile'],
+      // associatedDomains: ['applinks:lcw.app/mobile'],
       infoPlist: {
         'CFBundleURLTypes': [
           {
