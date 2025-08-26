@@ -113,7 +113,9 @@ function Settings({ navigation }: SettingsProps): React.ReactElement {
     <>
       <NavHeader title="Settings" />
       <ScrollView contentContainerStyle={styles.settingsContainer}>
-        <SettingsItem title="Use biometrics to unlock" onPress={onToggleBiometrics} rightComponent={biometricSwitch} disabled={!isBiometricsSupported} />
+        {(isBiometricsSupported && FEATURE_FLAGS.passwordProtect) && (
+          <SettingsItem title="Use biometrics to unlock" onPress={onToggleBiometrics} rightComponent={biometricSwitch} />
+        )}
         <SettingsItem title="Dark mode" onPress={toggleTheme} rightComponent={themeSwitch} />
         <SettingsItem title="Manage profiles" onPress={() => navigation.navigate('ManageProfilesScreen')} />
         <SettingsItem title="Register wallet" onPress={registerWallet} />
